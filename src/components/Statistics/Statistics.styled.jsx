@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export const StatBox = styled.section`
     width: 450px;
@@ -32,7 +32,7 @@ export const StatList = styled.ul`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px
+    border-bottom: 5px;
     }
 `;
 

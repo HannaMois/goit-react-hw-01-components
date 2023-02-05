@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {FriendCard, Status, Avatar, FriendName } from '../FriendList/FriendList.styled';
+import {FriendCard, Status, Avatar, FriendName } from './FriendListItem.styled';
 
 export default function FriendListItem({ avatar, name, isOnline,id }) {
     return (

@@ -1,11 +1,6 @@
 import PropTypes from 'prop-types';
 import {StatBox, Title, StatList, ListLabel, ListPercent} from './Statistics.styled';
 
-function getRandomHexColor() {
-    let bgColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-    return bgColor;
-  }
-
   export default function Statistics({ title, stats }) {
     return (
       <StatBox>
@@ -15,7 +10,7 @@ function getRandomHexColor() {
           {stats.map(el => (
             <li
               key={el.id}
-              style={{ backgroundColor: getRandomHexColor() }}
+               style={{ backgroundColor: getRandomHexColor() }}
             >
               <ListLabel>{el.label}</ListLabel>
               <ListPercent>{el.percentage}%</ListPercent>
@@ -36,3 +31,8 @@ function getRandomHexColor() {
       }).isRequired
     ).isRequired,
   };
+
+function getRandomHexColor() {
+    let bgColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    return bgColor;
+  }  
